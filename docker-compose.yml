@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   payment-service:
-    image: ghcr.io/bright-kidiga/YOUR_REPOSITORY_NAME:latest
+    image: ghcr.io/bright-kidiga/generic-payment-service:latest
     container_name: generic-payment-service
     restart: unless-stopped
     ports:
