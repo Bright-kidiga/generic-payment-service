@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  payment-service:
+    image: ghcr.io/bright-kidiga/YOUR_REPOSITORY_NAME:latest
+    container_name: generic-payment-service
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    networks:
+      - proxy-network
+
+networks:
+  proxy-network:
+    external: true
